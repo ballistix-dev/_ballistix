@@ -1,0 +1,51 @@
+.post-loop {
+  @include media($desktop-width) {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-right: - $base-spacing;
+    margin-left: - $base-spacing;
+
+    .hentry {
+      flex-basis: 33.33%;
+
+      padding-right: $base-spacing;
+      padding-left: $base-spacing;
+    }
+  }
+
+  .hentry {
+    margin-bottom: $base-spacing*2;
+
+    .post-header {
+      .post-title {
+        a {
+          text-decoration: none;
+
+          color: $base-font-color;
+        }
+      }
+
+      .post-meta {
+        margin-bottom: $small-spacing;
+
+        font-size: modular-scale(-1);
+      }
+    }
+
+    .thumbnail {
+      display: block;
+      //max-height: 185px;
+      overflow: hidden;
+
+      width: 100%;
+      height: 33.33vh;
+      margin-bottom: $base-spacing;
+
+      border-radius: $base-border-radius;
+      background-color: $light-gray;
+    }
+  }
+}

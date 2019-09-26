@@ -1,0 +1,28 @@
+.alignleft,
+img.alignleft {
+  display: inline;
+  float: left;
+
+  margin-right: $base-spacing;
+}
+
+.alignright,
+img.alignright {
+  display: inline;
+  float: right;
+
+  margin-left: $base-spacing;
+}
+
+.aligncenter,
+img.aligncenter {
+  display: block;
+  clear: both;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#searchform {
+  #s {}
+}

@@ -1,0 +1,60 @@
+#site-header {
+  margin-bottom: $base-spacing*2;
+
+  //background-color: $primary-color;
+  
+  li,
+  p,
+  span {
+  //  color: #FFFFFF;
+  }
+
+  .brand {
+    display: inline-block;
+
+    text-decoration: none;
+
+  //  color: white;
+
+    font-weight: 700;
+  }
+
+  .menu {
+    > li {
+      > a {
+        text-transform: uppercase;
+
+
+
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      @include media($desktop-width) {
+        > a {
+    //      color: #FFFFFF;
+        }
+        &.is-active {
+          > a {
+    //        background-color: #fff;
+    //        color: $base-font-color;
+          }
+        }
+        > .sub-menu {
+          > li {
+            > a {
+              color: $base-font-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  #widget-header {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

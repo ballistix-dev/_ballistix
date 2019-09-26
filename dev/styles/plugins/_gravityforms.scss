@@ -1,0 +1,101 @@
+.gform_confirmation_wrapper,
+.gform_wrapper .validation_error {
+  margin-bottom: $base-spacing;
+
+  border-radius: $base-border-radius;
+
+  @include padding($small-spacing $base-spacing);
+
+}
+
+.gform_confirmation_wrapper {
+  color: #ffffff;
+  background-color: $info-color;
+}
+
+.gform_wrapper .validation_error {
+  color: #FFFFFF; //contrast-switch($danger-color);
+  //border: 1px solid shade($danger-color, 25);
+  background-color: $danger-color;
+}
+
+.gform_wrapper {
+  .gform_heading {
+    .gform_title {}
+
+    .gform_description {}
+  }
+
+  .gform_body {
+    .gform_fields {
+      margin: 0;
+      padding: 0;
+
+      list-style: none;
+
+      .gform_validation_container {
+        display: none;
+      }
+
+      .gfield {
+        //field_sublabel_below field_description_below gfield_visibility_visible
+        .gfield_label {
+          font-weight: 700;
+
+          .gfield_required {
+            margin-left: 0.25rem;
+
+            color: $danger-color;
+          }
+        }
+
+        .ginput_container {}
+
+        .ginput_complex {
+
+          @media only screen and (min-width: 768px) {
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            justify-content: space-between;
+
+            * {
+              flex-basis: 49%;
+            }
+          }
+
+          input ~ label {
+            font-size: modular-scale(-1);
+          }
+
+        }
+
+        &.gfield_error {
+          .ginput_container {
+            input,
+            select,
+            textarea {
+              border: 2px solid $danger-color;
+              //background-color: tint($danger-color, 90);
+            }
+          }
+
+          .validation_message {
+            color: $danger-color;
+
+            font-size: modular-scale(-1);
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+
+  .gform_footer {}
+  // CLASSES
+  .top_label {}
+
+  .form_sublabel_below {}
+
+  .description_below {}
+}

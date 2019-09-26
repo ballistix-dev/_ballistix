@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding-right: $base-spacing;
+  padding-left: $base-spacing;
+
+  @include clearfix;
+}
+
+.container-full {
+  padding-right: $base-spacing;
+  padding-left: $base-spacing;
+
+  @include clearfix;
+}
+
+hr {
+  border: 0;
+  border-top: $base-border;
+}

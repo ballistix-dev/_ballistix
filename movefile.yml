@@ -1,0 +1,54 @@
+global:
+  sql_adapter: wpcli
+
+local:
+  vhost: http://hotsypacific.test
+  wordpress_path: /srv/www/hotsypacific/public_html # use an absolute path here
+
+  database:
+    name: hotsypacific
+    user: wp
+    password: "wp" # could be blank, so always use quotes around
+    host: localhost
+
+production:
+  vhost: https://hotsypacific.net
+  wordpress_path: /var/www/vhosts/hotsypacific.net/httpdocs # use an absolute path here
+
+  database:
+    name: blstx_hotsypacific
+    user: user_hotsypacifi
+    password: 7KIOqdNB2eLGGgNN
+    host: mysql09
+    # port: 3308 # Use just in case you have exotic server config
+    # mysqldump_options: '--max_allowed_packet=1G' # Only available if using SSH
+    # mysql_options: '--protocol=TCP' # mysql command is used to import db
+
+  exclude:
+    - '.git/'
+    - '.gitignore'
+    - '.gitmodules'
+    - '.env'
+    - 'node_modules/'
+    - 'bin/'
+    - 'tmp/*'
+    - 'Gemfile*'
+    - 'Movefile'
+    - 'movefile'
+    - 'movefile.yml'
+    - 'movefile.yaml'
+    - 'wp-config.php'
+    - 'wp-content/*.sql.gz'
+    - '*.orig'
+
+  # paths: # you can customize wordpress internal paths
+  #   wp_content: wp-content
+  #   uploads: wp-content/uploads
+  #   plugins: wp-content/plugins
+  #   mu_plugins: wp-content/mu-plugins
+  #   themes: wp-content/themes
+  #   languages: wp-content/languages
+
+  ssh:
+    host: 10.0.1.220
+    user: marcel
