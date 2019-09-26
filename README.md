@@ -1,6 +1,6 @@
-# _ballistix 3.0.0
+# _ballistix 3.0.2
 
-**_ballistix** is a blank child theme for [_dash](https://github.com/marcelbadua/_dash). It uses [Gulp.js](https://gulpjs.com/) as its automated workflow to compile its styles and scripts and [Bourbon](https://www.bourbon.io/) as it's SASS toolset. It also comes with built-in widgets.
+**_ballistix** is a blank child theme for [_dash](https://bitbucket.org/ballistixspe/_dash). It uses [Gulp.js](https://gulpjs.com/) as its automated workflow to compile its styles and scripts and [Bourbon](https://www.bourbon.io/) as it's SASS toolset. It also comes with built-in widgets.
 
 ## Prerequisites
 
@@ -12,7 +12,7 @@
 
 1. Clone parent theme in your themes folder
 
-            git clone git@github.com:marcelbadua/_dash.git
+            git clone git@bitbucket.org:ballistixspe/_dash.git
 
 1. Clone this repo in your themes folder
 
@@ -26,18 +26,13 @@
 
             npm install
 
-            # or
-
-            npm install --save-dev browser-sync gulp gulp-concat gulp-cssmin gulp-jquery-closure gulp-load-plugins gulp-notify gulp-plumber gulp-sass gulp-uglify gulp-util node-bourbon node-normalize-scss`
-
 1. run gulp, to start a localhost and monitors dev file changes
 
             gulp serve
 
 1. other gulp commands
 
-      - `gulp styles` # To compile styles
-      - `gulp scripts` # To compile scripts
+      - `gulp default` # To compile styles & scripts
 
 ---
 
