@@ -193,10 +193,10 @@ button, [type='button'], [type='reset'], [type='submit'],
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #FFFFFF;
-  border: 1px solid #FA6980 !important;
-  border-radius: 6px !important;
+  border: 1px solid #FA6980;
+  border-radius: 6px;
   outline: 0;
-  background-color: #FA6980 !important;
+  background-color: #FA6980;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -213,7 +213,7 @@ button:hover, [type='button']:hover, [type='reset']:hover, [type='submit']:hover
 .button-wire:hover,
 *[class*="so-widget-sow-button-wire"] .ow-button-base a:hover,
 *[class*="so-widget-sow-button-flat"] .ow-button-base a:hover {
-  background-color: #e15f73 !important;
+  background-color: #e15f73;
 }
 
 button:disabled, [type='button']:disabled, [type='reset']:disabled, [type='submit']:disabled,
@@ -811,6 +811,12 @@ hr {
   color: #FF4D4D;
   font-size: 0.75019em;
   font-style: italic;
+}
+
+*[class*="so-widget-sow-button-flat"] .ow-button-base a {
+  background-color: #FA6980 !important;
+  border: 1px solid #FA6980 !important;
+  border-radius: 6px !important;
 }
 
 *[class*="so-widget-sow-button-wire"] .ow-button-base a span {

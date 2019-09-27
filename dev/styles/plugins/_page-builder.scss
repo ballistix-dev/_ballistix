@@ -2,6 +2,9 @@
   .ow-button-base {
     a {
       @extend .button;
+      background-color: $primary-color!important;
+      border: 1px solid $_button-border-color!important;
+      border-radius: $base-border-radius!important;
     }
   }
 }
