@@ -5,7 +5,7 @@
 * @package _ballistix 3.0.0
 */
 
-show_admin_bar(false);
+//show_admin_bar(false);
 
 add_action('wp_enqueue_scripts', '_ballistix_enqueue_assets');
 

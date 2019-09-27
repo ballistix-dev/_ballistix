@@ -19,7 +19,7 @@ var basePaths = {
   dest: "dist/"
 };
 var server =  {
-  proxy: "http://starindustries.test/",
+  proxy: "http://sample.test/",
   https: false,
   //host: '192.168.100.4'
 };
