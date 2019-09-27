@@ -1,0 +1,17 @@
+*[class*="so-widget-sow-button-flat"] {
+  .ow-button-base {
+    a {
+      @extend .button;
+    }
+  }
+}
+*[class*="so-widget-sow-button-wire"] {
+  .ow-button-base {
+    a {
+      @extend .button-wire;
+      span {
+        color: $primary-color!important;
+      }
+    }
+  }
+}

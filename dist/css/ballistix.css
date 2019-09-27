@@ -16,6 +16,7 @@ body {
 
 body {
   margin: 0;
+  position: relative;
 }
 
 html {
@@ -176,7 +177,10 @@ table th {
 }
 
 button, [type='button'], [type='reset'], [type='submit'],
-.button {
+.button,
+.button-wire,
+*[class*="so-widget-sow-button-wire"] .ow-button-base a,
+*[class*="so-widget-sow-button-flat"] .ow-button-base a {
   display: inline-block;
   padding: 0.975rem 3.75rem;
   cursor: pointer;
@@ -189,10 +193,10 @@ button, [type='button'], [type='reset'], [type='submit'],
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #FFFFFF;
-  border: 1px solid #FA6980;
-  border-radius: 6px;
+  border: 1px solid #FA6980 !important;
+  border-radius: 6px !important;
   outline: 0;
-  background-color: #FA6980;
+  background-color: #FA6980 !important;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -205,19 +209,33 @@ button, [type='button'], [type='reset'], [type='submit'],
 }
 
 button:hover, [type='button']:hover, [type='reset']:hover, [type='submit']:hover,
-.button:hover {
-  background-color: #e15f73;
+.button:hover,
+.button-wire:hover,
+*[class*="so-widget-sow-button-wire"] .ow-button-base a:hover,
+*[class*="so-widget-sow-button-flat"] .ow-button-base a:hover {
+  background-color: #e15f73 !important;
 }
 
 button:disabled, [type='button']:disabled, [type='reset']:disabled, [type='submit']:disabled,
-.button:disabled {
+.button:disabled,
+.button-wire:disabled,
+*[class*="so-widget-sow-button-wire"] .ow-button-base a:disabled,
+*[class*="so-widget-sow-button-flat"] .ow-button-base a:disabled {
   cursor: not-allowed;
   opacity: 0.5;
 }
 
 button:disabled:hover, [type='button']:disabled:hover, [type='reset']:disabled:hover, [type='submit']:disabled:hover,
-.button:disabled:hover {
+.button:disabled:hover,
+.button-wire:disabled:hover,
+*[class*="so-widget-sow-button-wire"] .ow-button-base a:disabled:hover,
+*[class*="so-widget-sow-button-flat"] .ow-button-base a:disabled:hover {
   background-color: #FA6980;
+}
+
+.button-wire, *[class*="so-widget-sow-button-wire"] .ow-button-base a {
+  background-color: transparent !important;
+  color: #FA6980 !important;
 }
 
 fieldset {
@@ -793,4 +811,8 @@ hr {
   color: #FF4D4D;
   font-size: 0.75019em;
   font-style: italic;
+}
+
+*[class*="so-widget-sow-button-wire"] .ow-button-base a span {
+  color: #FA6980 !important;
 }
