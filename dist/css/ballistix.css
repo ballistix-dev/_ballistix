@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap");
 html {
   box-sizing: border-box;
 }
@@ -25,7 +25,7 @@ html {
 
 body {
   color: #333;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   line-height: 1.6;
 }
@@ -37,7 +37,7 @@ h4,
 h5,
 h6 {
   color: #333;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.15;
 }
@@ -197,7 +197,7 @@ button, [type='button'], [type='reset'], [type='submit'],
   border-radius: 6px;
   outline: 0;
   background-color: #FA6980;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 1;
@@ -259,7 +259,7 @@ input,
 select,
 textarea {
   display: block;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
 

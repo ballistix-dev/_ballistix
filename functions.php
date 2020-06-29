@@ -43,7 +43,7 @@ if ( ! function_exists( '_ballistix_setup' ) ) :
         */
         add_theme_support( 'html5', array( 'search-form' ) );
 
-        add_theme_support('custom-logo');
+        //add_theme_support('custom-logo');
 
     }
 

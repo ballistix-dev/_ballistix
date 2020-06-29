@@ -18,7 +18,7 @@ var basePaths = {
   dest: "dist/"
 };
 var server =  {
-  proxy: "http://sample.test/",
+  proxy: "http://sandbox.test/",
   https: false,
   //host: '192.168.100.4'
 };

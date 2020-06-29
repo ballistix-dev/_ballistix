@@ -29,7 +29,7 @@
 
       <header id="site-header" role="banner">
 
-        <div class="container-full">
+        <div class="container">
 
           <?php if (is_active_sidebar('widget-header')): ?>
 
